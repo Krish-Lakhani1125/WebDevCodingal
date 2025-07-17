@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        div{
+            width: 200px;
+            height: 100px;
+            color:white;
+            padding:10px;
+            font-weight: bold;
+            /*margin: 20px*/
+        }
+        /*1. Relative*/
+        .relative-box {
+            position: relative;
+            background-color: orange;
+            top: 320px;
+            left: 100px;
+        }
+
+        /* 2. Absolute */
+        .absolute-box{
+            position: absolute;
+            top: 190px;
+            left: 290px;
+            background-color: crimson;
+
+        }
+        /* 3. Fixed */
+        .fixed-box{
+            position: fixed;
+            top: 30px;
+            right: 0px;
+            background-color: teal;
+
+        }
+        /* 4. Sticky */
+        .sticky-box {
+            position: sticky;
+            top: 0px;
+            background-color: purple;
+        }
+        .scroll-space{
+            height: 1500px;
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="relative-box">
+        Relative Box<br>
+        (Moves relative to its normal place)
+        <div class="absolute-box">
+            Absolute Box INSIDE<br>
+            (Placed relative to relative div)
+        </div>
+    </div>
+
+    <div class="absolute-box">
+        Absolute Box OUTSIDE<br>
+        (Placed relative to nearest positioned parent or body-html)
+    </div>
+
+    <div class="fixed-box">
+        Fixed Box<br>
+        (Always stays in the corner)
+    </div>
+    <div class="sticky-box">
+        Sticky Box<br>
+        (Scrolls until stuck at top)
+    </div>
+
+    <div class="scroll-space"></div>
+
+</body>
+</html>
