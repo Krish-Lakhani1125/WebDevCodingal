@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* The animation code */
+        @keyframes example {
+            0% {background-image: url("Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis\,_September_2023_\(cropped\).jpg");}
+            33% {background-image: url("Real_Madrid_vs._Atlético_Madrid_28_September_2013_a_\(cropped2\).JPG");}
+            66% {background-image: url("Ronaldo-Champions-league-Manchester-United.webp");}
+            100%{background-image: url("Cr7_11_September_2021.jpg");}
+            
+        }
+        /* The element to apply the animation to*/
+        div {
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+            animation-name: example;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+        #gradient{
+            background-image: linear-gradient(to top, red,green);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <center>
+    <div style ="font-size: 50px">
+       <strong>Cristiano Ronaldo</strong> 
+       </div><br>
+       <h2 id="gradient">Ronaldo<br> Jersey <br>Colors</h2>
+      
+      
+    </center>
+</body>
+</html>

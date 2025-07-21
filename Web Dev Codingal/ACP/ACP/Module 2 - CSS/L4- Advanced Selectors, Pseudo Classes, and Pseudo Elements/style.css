@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:gray;
+
+}
+
+h1 {
+    background-color:green;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: green;
+}
+
+ul > li {
+    font-weight: bold;
+}
+
+
+
+ul li:hover {
+    color: white;
+    background-color:green;
+}
+
+ul li::before {
+    content: "🧪"
+}
+
+
+a::after {
+    content:"🔬"
+}
+
+
+p::first-letter {
+    font-size: 200%;
+    color:green;
+}
