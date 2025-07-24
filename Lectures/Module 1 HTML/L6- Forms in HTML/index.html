@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Personal Details Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label>Name :</label> <br>
+            <input type="text" id="name" placeholder="enter name"><br>
+
+            <label> Email :</label> <br>
+            <input type="text" id="email" placeholder="Enter Email"> <br>
+
+            <label>Password (Must only contain letters and numbers):</label><br>
+            <input type="password" id="contact" pattern="[A-Za-z0-9]+" title="Password must contain only letters and numbers." placeholder="Enter Password"> <br> <br>
+
+            <label>Gender</label><br>
+            <input type="radio" id="female" name="Gender" value="female">Female<br>
+            <input type="radio" id="male" name="Gender" value="male">Male<br><br>
+            <label>Favorite City</label><br>
+            <input type="checkbox" value="new dehli">New Dehli<br>
+            <input type="checkbox" value="Mumbai">Mumbai<br>
+
+            <label>Birthday</label>
+            <input type="date" id="birthday" name="Birthday"> <br><br>
+            
+            <label>Choose a Car</label>
+            <select>
+                <option>Volvo</option>
+                <option>Saab</option>
+                <option>Mercedes</option>
+                <option>Audi</option>
+            </select><br><br>
+            
+
+            <input type="Submit">
+            <!--You can also do <button>Submit</button instead of input type.-->
+
+
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
