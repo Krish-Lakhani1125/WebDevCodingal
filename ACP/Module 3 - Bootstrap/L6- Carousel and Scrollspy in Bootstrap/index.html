@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css ">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        body{
+            position:relative;
+        }
+        .scrollspy-example {
+  position: relative;
+  overflow: auto;
+}
+.nav-link{
+    color:white;
+}
+.nav-link:hover{
+    color: white;
+    text-decoration: underline;
+
+}
+button{
+    margin:10px
+}
+    </style>
+</head>
+
+    
+
+    <body data-spy="scroll" data-target=".navbar" data-ffset="50">
+        <header class="bg-dark text-white" style="text-align:center;">
+ <div class="row">
+  <div class="col-md-3">
+    <nav id="sidebar" class="navbar navbar-dark bg-dark sticky-top" style="position:fixed;">
+      <nav class="nav nav-pills">
+      <button class="btn btn-warning"><a class="nav-link" href="#section1">Shop</a></button>
+       
+
+         <button class="btn btn-warning"><a class="nav-link" href="#section2">Shopping Cart</a></button>
+
+         <button class="btn btn-warning"><a class="nav-link" href="#section3">Deals</a></button>
+
+         <button class="btn btn-warning"><a class="nav-link" href="#section4">Purchase</a></button>
+      </nav>
+    </nav>
+  </div></header><br><br><br><br><br><br>
+<div class="container-fluid bg-dark">
+  <h1 class="display-1 bg-dark text-white">Amazon</h1>
+  </div>
+ 
+  <div class="col-md-9">
+    <div data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="0" tabindex="0" class="scrollspy-example"></div>
+      <h4 id="section1">Shop</h4>
+          <div class="container">
+        <div class="card bg-dark text-white" style="width: 18rem;">
+            <img class="card-img-top" src="https://static01.nyt.com/images/2021/03/03/us/03xp-amazon-logo/oakImage-1614794068335-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Card img cap">
+            <div class="card-body">
+                <h5 class="card-title">Amazon</h5>
+                <p class="card-text">All kinds of wonderful deals</p>
+                <a href="#" class="btn btn-warning">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+      <h4 id="section2">Shopping Cart</h4>
+        <button class="btn btn-light"><a href="#section1">Add to your shopping list</a></button><br><br><br>
+
+      <h4 id="section3">Deals</h4>
+ 
+         <div class="container">
+        <div class="card bg-dark text-white" style="width: 18rem;">
+            <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/81Y26toqdTL._AC_UL450_SR450,320_.jpg" alt="product" style="" >
+            <div class="card-body">
+                <h5 class="card-title">Dumbell</h5>
+                <p class="card-text">50% off at just $7.99</p>
+                <a href="#" class="btn btn-warning">Pruchase Now</a>
+            </div>
+        </div>
+    </div>
+    
+    
+         <div class="container">
+        <div class="card bg-dark text-white" style="width: 18rem; float:right;">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/813-YxuWrrL._AC_UL480_FMwebp_QL65_.jpg" alt="product" style="" >
+            <div class="card-body">
+                <h5 class="card-title">Pool Towels</h5>
+                <p class="card-text">75% off at just $4.99</p>
+                <a href="#" class="btn btn-warning">Pruchase Now</a>
+            </div>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ 
+
+      <h4 id="section4">Purchase</h4>
+      <p>
+  <button class="btn btn-warning"><a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart">Click to Purchase</a></button>
+      </p>
+    </div>
+  </div>
+</div>
+<div style="height:1500px"></div>
+
+</body>
+</html>
