@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>A function can access variables defined inside the function</p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        var b = 5;
+        function myFunction(){
+            var a = 4;
+            document.getElementById("demo").innerHTML = b * a;
+        }
+
+        //This function would not work because you cannot use variables defined inside a function outside of the function
+        //If you move var a outside of the function both ofo the following functions would work
+        document.getElementById("demo1").innerHTML = a;
+        document.getElementById("demo2").innerHTML = b;
+            </script>
+</body>
+</html>
