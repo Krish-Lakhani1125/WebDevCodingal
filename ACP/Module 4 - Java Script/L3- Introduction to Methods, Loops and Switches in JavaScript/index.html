@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript String Methods and Loops</h2>
+  
+    <p id="result"></p>
+        <script>
+              var x= "HeLlO";
+        document.write(x.toUpperCase());
+        document.write("<br>");
+        document.write(x.toLowerCase());
+        document.write("<br>")
+        document.write(x.startsWith('B'));
+        document.write("<br>")
+        document.write(x.startsWith('H'));
+        var y="Nice to meetyYou!"
+         var patt = new RegExp("meet");
+                 document.write("<br>")
+
+        var result1 = patt.test(x);
+                document.write("<br>")
+ 
+        var result2 = patt.test(y);
+        document.write(result1);
+        document.write("<br>");
+        document.write(result2);
+                document.write("<br>");
+
+         for (var i = 1; i<= 10; i++) {
+            document.write(50*i +"<br>");
+
+        }
+         var item=5;
+
+        switch (item) {
+            case 1:
+                document.write("Toy");
+                break;
+            case 2:
+                document.write("TV");
+                break;
+            case 3:
+                document.write("Phone");
+                 break;
+            case 4:
+                document.write("Computer");
+                 break;
+            case 5:
+                document.write("Notebook");
+                 break;
+            case 6:
+                document.write("Pencil");
+                 break;
+            case 7:
+                document.write("Pen");
+                 break;
+            default:
+                document.write("Not an Item");
+
+        }
+            </script>
+     
+</body>
+</html>
